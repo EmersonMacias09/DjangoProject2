@@ -72,17 +72,22 @@ WSGI_APPLICATION = 'Paginaweb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
-
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "Hola",
-        "USER": "postgres",
-        "PASSWORD": "1234",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
     }
 }
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "Hola",
+#         "USER": "postgres",
+#         "PASSWORD": "1234",
+#         "HOST": "127.0.0.1",
+#         "PORT": "5432",
+#    }
+# }
 
 
 # Password validation
